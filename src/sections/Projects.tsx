@@ -1,6 +1,5 @@
 import EcommerceProject from "@/assets/images/ecommerce pic.png";
 import lightSaasLandingPage from "@/assets/images/Ai-Chatbot.png";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
@@ -18,7 +17,7 @@ const portfolioProjects = [
       { title: "Improved site speed by 50%" },
       { title: "Increased mobile traffic by 35%" },
     ],
-    link: "https://youtu.be/4k7IdSLxh6w",
+    link: "#",
     image: EcommerceProject,
   },
   {

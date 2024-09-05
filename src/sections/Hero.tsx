@@ -38,7 +38,7 @@ export const HeroSection = () => {
       <div className=' size-[820px] hero-ring' />
       <div className=' size-[1020px] hero-ring' />
       <div className=' size-[1220px] hero-ring' />
-         <HeroPulse size={430} rotation={-14} shouldOrbit orbitDuration='30s' shouldSpin spinDuration='3s'>
+         {/* <HeroPulse size={430} rotation={-14} shouldOrbit orbitDuration='30s' shouldSpin spinDuration='3s'>
           <SparkleIcon className='size-8 text-amber-300/20' />
          </HeroPulse>
          <HeroPulse size={440} rotation={79} shouldOrbit orbitDuration='32s' shouldSpin spinDuration='3s'>
@@ -70,7 +70,43 @@ export const HeroSection = () => {
          </HeroPulse>
          <HeroPulse size={800} rotation={-72} shouldOrbit orbitDuration='48s' shouldSpin spinDuration='6s'>
         <StarIcon className='size-28 text-amber-300' />
-         </HeroPulse> 
+         </HeroPulse>  */}
+
+<HeroPulse size={420} rotation={-10} shouldOrbit orbitDuration='30s' shouldSpin spinDuration='4s'>
+  <SparkleIcon className='size-6 text-amber-300/20' />
+</HeroPulse>
+<HeroPulse size={450} rotation={60} shouldOrbit orbitDuration='32s' shouldSpin spinDuration='5s'>
+  <SparkleIcon className='size-7 text-amber-300/20' />
+</HeroPulse>
+<HeroPulse size={500} rotation={-30} shouldOrbit orbitDuration='34s'>
+  <div className='size-4 rounded-full bg-amber-300/20' />
+</HeroPulse>
+<HeroPulse size={540} rotation={160} shouldOrbit orbitDuration='36s' shouldSpin spinDuration='4s'>
+  <SparkleIcon className='size-10 text-amber-300/20' />
+</HeroPulse>
+<HeroPulse size={560} rotation={25} shouldOrbit orbitDuration='38s' shouldSpin spinDuration='5s'>
+  <StarIcon className='size-12 text-amber-300' />
+</HeroPulse>
+<HeroPulse size={590} rotation={100} shouldOrbit orbitDuration='40s' shouldSpin spinDuration='6s'>
+  <StarIcon className='size-10 text-amber-300'/>
+</HeroPulse>
+<HeroPulse size={620} rotation={15} shouldOrbit orbitDuration='42s' shouldSpin spinDuration='5s'>
+  <StarIcon className='size-10 text-amber-300'/>
+</HeroPulse>
+<HeroPulse size={660} rotation={-8} shouldOrbit orbitDuration='44s'>
+  <div className='size-4 rounded-full bg-amber-300/20' />
+</HeroPulse>
+<HeroPulse size={700} rotation={150} shouldOrbit orbitDuration='46s'>
+  <SparkleIcon className='size-12 text-amber-300/20' />
+</HeroPulse>
+<HeroPulse size={730} rotation={70} shouldOrbit orbitDuration='48s' shouldSpin spinDuration='5s'>
+  <SparkleIcon className='size-14 text-amber-300/20' />
+</HeroPulse>
+<HeroPulse size={800} rotation={-65} shouldOrbit orbitDuration='50s' shouldSpin spinDuration='6s'>
+  <StarIcon className='size-28 text-amber-300' />
+</HeroPulse>
+
+
          </div>
       <div className="container">
         <div className='flex flex-col items-center'>
@@ -88,7 +124,7 @@ export const HeroSection = () => {
 </h1>
 
         <p className='mt-4 text-center text-white/60 md:text-lg'>
-        Creative Full Stack Developer with a strong emphasis on frontend development, commited to crafting exceptional, user-centered digital experiences across the entire stack. I excel at transforming complex concepts into elegant, interactive designs that enhance engagement and usability, while ensuring reliable backend support for seamless performance.
+        Passionate software engineer with a focus on building engaging & accessible digital experinces.
         </p>
         </div>
         <div className='flex flex-col md:flex-row justify-center items-center mt-8 gap-4'>

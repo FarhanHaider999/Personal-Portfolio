@@ -100,20 +100,19 @@ export const AboutSection = () => {
       <div className="container" id="About">
     <SectionHeader 
     eyebrow="About Me" 
-    title="A Glimpse Into My World" 
-    description="Learn more about Who I am, and what inspires me."
+    title="A Peek Into My Expertise and Interests" 
     />
     <div className="mt-20 flex flex-col gap-8">
       <div className="grid grid-cols-1 md:grid-cols-5 gap-8 md:grid-cols-5 lg:grid-cols-3">
       <Card className="h-[320px] md:col-span-4 lg:col-span-3">
-      <CardHeader title="My Tech Stack" description="Expolre the technologies and tools I used to craft exceptional digital experiences" className=""/>
+      <CardHeader title="Core Technologies" className=""/>
          <ToolboxItems items={toolboxItems} className="" itemsWrapperClassName="animate-move-left [animation-duration:30s]" />   
          <ToolboxItems items={toolboxItems} className="mt-6" itemsWrapperClassName="animate-move-right [animation-duration:20s]"  />   
       </Card>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-3 gap-8">
       <Card className="h-[320px] p-0 flex flex-col md:col-span-3 lg:col-span-2">
-      <CardHeader title="Beyond the Code" description="Expolre my interests and hobbies beyond the digital realm" className="px-6 py-6"/>
+      <CardHeader title="Interests Beyond Development" className="px-6 py-6"/>
           <div className="relative flex-1" ref={constraintRef}>
             {hobbies.map(hobby => (
               <motion.div key={hobby.title} className="inline-flex items-center gap-2 px-6 bg-gradient-to-r from-amber-300 to-orange-400 rounded-full py-1.5 absolute" style={{
