@@ -1,6 +1,6 @@
 'use client';
 import { SectionHeader } from "@/components/SectionHeader";
-import { Card } from "@/components/card";
+import { Card } from "@/components/Card";
 import Image from "next/image";
 import bookImage from "@assets/images/book-cover.png";
 import ReactIcon from "@assets/icons/react.svg";
@@ -10,6 +10,7 @@ import expressIcon from "@/assets/icons/expressjs.svg";
 import mongodbIcon from "@/assets/icons/mongodb.svg";
 import reduxIcon from "@/assets/icons/redux.svg";
 import astroICON  from "@/assets/icons/Astro.svg";
+import threeIcon from "@/assets/icons/Three.js.svg";
 import mapImage from "@assets/images/map.png";
 import { CardHeader } from "@/components/CardHeader";
 import { ToolboxItems } from "@/components/ToolboxItems";
@@ -36,6 +37,10 @@ const toolboxItems = [
   {
     title: "MongoDB",
     iconType: mongodbIcon,
+  },
+  {
+    title: "Three.js",
+    iconType: threeIcon,
   },
   {
     title: "Redux",
@@ -100,7 +105,7 @@ export const AboutSection = () => {
       <div className="container" id="About">
     <SectionHeader 
     eyebrow="About Me" 
-    title="A Peek Into My Expertise and Interests" 
+    title="My Expertise and Interests" 
     />
     <div className="mt-20 flex flex-col gap-8">
       <div className="grid grid-cols-1 md:grid-cols-5 gap-8 md:grid-cols-5 lg:grid-cols-3">

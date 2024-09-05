@@ -1,11 +1,11 @@
 import EcommerceProject from "@/assets/images/ecommerce pic.png";
-import lightSaasLandingPage from "@/assets/images/Ai-Chatbot.png";
+import  ChatBotPic from "@/assets/images/Ai-Chatbot.png";
+import IphoneWeb from "@/assets/images/iphone web.png"
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
-import grainImage from "@/assets/images/grain.jpg";
 import { SectionHeader } from "@/components/SectionHeader";
-import { Card } from "@/components/card";
+import { Card } from "@/components/Card";
 
 const portfolioProjects = [
   {
@@ -13,9 +13,9 @@ const portfolioProjects = [
     year: "2024",
     title: "Ecommerce Store",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "Feature-rich e-commerce website (MERN stack)" },
+      { title: "Comprehensive e-commerce functionalities" },
+      { title: "Secure PayPal integration" },
     ],
     link: "#",
     image: EcommerceProject,
@@ -25,12 +25,23 @@ const portfolioProjects = [
     year: "2024",
     title: "Modern AI-Chatbot",
     results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
+      { title: "Built with Next.js, Vercel AI SDK, and RAGChat SDK" },
+      { title: "Real-time website interaction with AI" },
+      { title: "Serverless architecture for optimized operations" },
     ],
-    link: "https://youtu.be/7hi5zwO75yc",
-    image: lightSaasLandingPage,
+    link: "#",
+    image: ChatBotPic,
+  },
+  {
+    company: "Independent Project",
+    year: "2024",
+    title: "Recreated 3D iPhone Website",
+    results: [
+      { title: "Applied Three.js for advanced 3D rendering" },
+      { title: "Implemented GSAP and React for animation" },
+    ],
+    link: "#",
+    image: IphoneWeb,
   },
 ];
 
@@ -38,7 +49,7 @@ export const ProjectsSection = () => {
   return (
     <section className="pb-16 lg:py-24">
       <div className="container" id="projects">
-        <SectionHeader eyebrow="Real-world Applications" title="Featured Projects" description="See how I transformed concepts into engaging digital experiences"/>
+        <SectionHeader eyebrow="Real-world Applications" title="Recent Projects" description="See the work I've developed and the solutions I've crafted."/>
         <div className="flex flex-col mt-10 md:mt-20 gap-20">
           {portfolioProjects.map((project, projectIndex) => (
             <Card
@@ -56,8 +67,8 @@ export const ProjectsSection = () => {
               <hr className="border-t-2 border-white/5 mt-4 md:mt-5"/>
               <ul className="flex flex-col gap-4 mt-4 md:mt-5">
                 {project.results.map(result => (
-                  <li className="flex gap-2 tex-sm md:text-base text-white/50">
-                    <CheckCircleIcon className="size-5 md:size-6"/>
+                  <li className="flex gap-2 tex-sm md:text-base lg:text-base text-white/50">
+                    <CheckCircleIcon className="size-5 md:size-6 lg:size-7"/>
                     <span>{result.title}</span>
                     </li>
                 ))}

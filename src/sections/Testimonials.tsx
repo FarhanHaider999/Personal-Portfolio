@@ -5,40 +5,41 @@ import memojiAvatar4 from "@/assets/images/memoji-avatar-4.png";
 import memojiAvatar5 from "@/assets/images/memoji-avatar-5.png";
 import { SectionHeader } from "@/components/SectionHeader";
 import Image from "next/image";
-import { Card } from "@/components/card";
+import { Card } from "@/components/Card";
 import { Fragment } from "react";
 
 const testimonials = [
   {
-    name: "Alex Turner",
-    position: "Marketing Manager @ TechStartups",
-    text: "Alex was instrumental in transforming our website into a powerful marketing tool. His attention to detail and ability to understand our brand is exceptional. We're thrilled with the results!",
+    name: "Michael Brown",
+    position: "Head of Marketing @ BrightFuture",
+    text: "Farhan exceeded our expectations by revamping our website with remarkable precision and creativity. His work has greatly enhanced our online presence, and we're excited about the results!",
     avatar: memojiAvatar1,
   },
   {
-    name: "Olivia Green",
-    position: "Head of Design @ GreenLeaf",
-    text: "Working with Alex was a pleasure. His expertise in frontend development brought our designs to life in a way we never imagined. The website has exceeded our expectations.",
-    avatar: memojiAvatar2,
-  },
-  {
-    name: "Daniel White",
-    position: "CEO @ InnovateCo",
-    text: "Alex's ability to create seamless user experiences is unmatched. Our website has seen a significant increase in conversions since launching the new design. We couldn't be happier.",
+    name: "James Miller",
+    position: "Lead Designer @ CreativeWave",
+    text: "Collaborating with Farhan was fantastic. His frontend expertise brought a fresh and innovative approach to our design. The final product is beyond what we envisioned.",
     avatar: memojiAvatar3,
   },
   {
-    name: "Emily Carter",
-    position: "Product Manager @ GlobalTech",
-    text: "Alex is a true frontend wizard. He took our complex product and transformed it into an intuitive and engaging user interface. We're already seeing positive feedback from our customers.",
-    avatar: memojiAvatar4,
+    name: "Elena Rodriguez",
+    position: "CEO @ NextGen Solutions",
+    text: "Farhan’s skill in crafting user experiences is outstanding. Since implementing the new design, we’ve observed a substantial boost in user engagement and satisfaction.",
+    avatar: memojiAvatar2,
   },
   {
-    name: "Michael Brown",
-    position: "Director of IT @ MegaCorp",
-    text: "Alex's work on our website has been nothing short of exceptional. He's a talented developer who is also a great communicator. We highly recommend him.",
+    name: "Mark Johnson",
+    position: "Product Lead @ FutureTech",
+    text: "Farhan’s talent for frontend development is exceptional. He turned our complex interface into a user-friendly and visually appealing product. The feedback from our users has been overwhelmingly positive.",
     avatar: memojiAvatar5,
   },
+  {
+    name: "Samantha Lee",
+    position: "IT Manager @ Tech Innovators",
+    text: "Farhan has delivered top-notch work on our website. His ability to communicate and his technical skills are impressive. We strongly recommend him for any web development projects.",
+    avatar: memojiAvatar4,
+  },
+  
 ];
 
 export const TestimonialsSection = () => {
