@@ -120,7 +120,7 @@ export const HeroSection = () => {
       </div>
         <div className='max-w-lg mx-auto'>
         <h1 className='font-serif font-bold text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-yellow-300 to-amber-600 text-3xl md:text-5xl text-center mt-8 tracking-wide leading-tight md:leading-normal'>
-  Hey I'm Farhan Haider
+  Hey I&apos;m Farhan Haider
 </h1>
 
         <p className='mt-4 text-center text-white/60 md:text-lg'>
@@ -139,7 +139,7 @@ export const HeroSection = () => {
           <button onClick={scrollToContact}
             style={{ cursor: 'pointer', zIndex: '10' }} className='inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl' >
             <span>👋</span>
-            <span className='font-semibold'>Let's Connect</span>
+            <span className='font-semibold'>Let&apos;s Connect</span>
           </button>
         </div>
       </div>
