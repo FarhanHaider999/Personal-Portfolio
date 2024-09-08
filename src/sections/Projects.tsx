@@ -1,6 +1,6 @@
 import EcommerceProject from "@/assets/images/ecommerce pic.png";
 import  ChatBotPic from "@/assets/images/Ai-Chatbot.png";
-import IphoneWeb from "@/assets/images/iphone web.png"
+import FizziLandingPage from "@/assets/images/fiizipage.png";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
@@ -35,13 +35,13 @@ const portfolioProjects = [
   {
     company: "Independent Project",
     year: "2024",
-    title: "Recreated 3D iPhone Website",
+    title: "Scroll Animated Website",
     results: [
       { title: "Applied Three.js for advanced 3D rendering" },
       { title: "Implemented GSAP and React for animation" },
     ],
-    link: "#",
-    image: IphoneWeb,
+    link: "https://fizzi-demo.vercel.app/",
+    image: FizziLandingPage,
   },
 ];
 
