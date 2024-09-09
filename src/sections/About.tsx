@@ -55,43 +55,43 @@ const toolboxItems = [
 
 const hobbies = [
   {
-    title: 'Cinematography',
+    title: 'Behavioral Analysis',
     emoji: '🎥',
     left: '5%',
     top: '5%',
   },
   {
-    title: 'Cricket',
+    title: 'Self-improvement',
     emoji: '🏏',
     left: '50%',
     top: '5%',
   },
   {
-    title: 'Travelling',
+    title: 'Travel & Adventure',
     emoji: '✈️',
     left: '35%',
     top: '40%',
   },
   {
-    title: 'Exercise',
+    title: 'Fitness',
     emoji: '🏋️‍♂️',
     left: '10%',
     top: '35%',
   },
   {
-    title: 'Astronomy',
+    title: 'Acting & & Filmography',
     emoji: '🌌',
-    left: '70%',
+    left: '60%',
     top: '45%',
   },
   {
-    title: 'Robotics',
+    title: 'Cryptography & Code Breaking',
     emoji: '🤖',
     left: '5%',
     top: '65%',
   },
   {
-    title: 'Reading',
+    title: 'Business & Storytelling',
     emoji: '📚',
     left: '45%',
     top: '70%',
@@ -128,7 +128,7 @@ export const AboutSection = () => {
               dragConstraints={constraintRef}
               >
                 <span className="font-medium text-gray-950">{hobby.title}</span>
-                <span>{hobby.emoji}</span>
+                
 
                 </motion.div>
             ))}
