@@ -124,7 +124,7 @@ export const HeroSection = () => {
 </h1>
 
         <p className='mt-4 text-center text-white/60 md:text-lg'>
-        Software Engineer with an eye for Design.
+        Software Engineer with an Eye for Design.
         </p>
         </div>
         <div className='flex flex-col md:flex-row justify-center items-center mt-8 gap-4'>
