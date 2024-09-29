@@ -1,6 +1,8 @@
 import EcommerceProject from "@/assets/images/ecommerce pic.png";
 import  ChatBotPic from "@/assets/images/Ai-Chatbot.png";
 import FizziLandingPage from "@/assets/images/fiizipage.png";
+import carpic from "@/assets/images/figmaios.png";
+import fashion from "@/assets/images/fashionf.png";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
@@ -43,13 +45,35 @@ const portfolioProjects = [
     link: "https://fizzi-demo.vercel.app/",
     image: FizziLandingPage,
   },
+  {
+    company: "Independent Project",
+    year: "2024",
+    title: "iOS 18 Car Control App Design",
+    results: [
+      { title: "Designed a car control app with complex layouts" },
+      { title: "Used Apple’s guidelines and SF Symbols" },
+    ],
+    link: "#",
+    image: carpic,
+  },
+  {
+    company: "Independent Project",
+    year: "2024",
+    title: "Fashion Website",
+    results: [
+      { title: "Designed a fashion e-commerce website focusing on vibrant visuals." },
+      { title: "user navigation with strategic placements for intuitive shopping experience" },
+    ],
+    link: "#",
+    image: fashion,
+  },
 ];
 
 export const ProjectsSection = () => {
   return (
     <section className="pb-16 lg:py-24">
       <div className="container" id="projects">
-        <SectionHeader eyebrow="Real-world Applications" title="Recent Projects" description="See the work I've developed and the solutions I've crafted."/>
+        <SectionHeader eyebrow="Real-world Applications" title="Recent Projects" description="Explore my creations in design and development"/>
         <div className="flex flex-col mt-10 md:mt-20 gap-20">
           {portfolioProjects.map((project, projectIndex) => (
             <Card

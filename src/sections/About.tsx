@@ -9,7 +9,7 @@ import nodeIcon from "@/assets/icons/nodejs.svg";
 import expressIcon from "@/assets/icons/expressjs.svg";
 import mongodbIcon from "@/assets/icons/mongodb.svg";
 import reduxIcon from "@/assets/icons/redux.svg";
-import astroICON  from "@/assets/icons/Astro.svg";
+import figmaIcon from "@/assets/icons/figma-svgrepo-com.svg";
 import threeIcon from "@/assets/icons/Three.js.svg";
 import mapImage from "@assets/images/map.png";
 import { CardHeader } from "@/components/CardHeader";
@@ -47,8 +47,8 @@ const toolboxItems = [
     iconType: reduxIcon,
   },
   {
-    title: "Astro",
-    iconType: astroICON,
+    title: "Figma",
+    iconType: figmaIcon,
   },
   
 ];
