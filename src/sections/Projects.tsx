@@ -53,7 +53,7 @@ const portfolioProjects = [
       { title: "Designed a car control app with complex layouts" },
       { title: "Used Apple’s guidelines and SF Symbols" },
     ],
-    link: "#",
+    link: "https://www.figma.com/design/EdmXRztk0dVB3gz6E1WZue/ios-18-design?node-id=0-1&t=qRl9ayhHWvInDjcI-1",
     image: carpic,
   },
   {
@@ -64,7 +64,7 @@ const portfolioProjects = [
       { title: "Designed a fashion e-commerce website focusing on vibrant visuals." },
       { title: "user navigation with strategic placements for intuitive shopping experience" },
     ],
-    link: "#",
+    link: "https://www.figma.com/design/yPnovcH72BwYJ3N9vCDRyU/Fashion-Site-Design?node-id=0-1&t=C4Tciw36OZDu2eNl-1",
     image: fashion,
   },
 ];
