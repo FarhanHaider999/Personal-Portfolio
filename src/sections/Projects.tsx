@@ -3,6 +3,7 @@ import  ChatBotPic from "@/assets/images/Ai-Chatbot.png";
 import FizziLandingPage from "@/assets/images/fiizipage.png";
 import carpic from "@/assets/images/figmaios.png";
 import fashion from "@/assets/images/fashionf.png";
+import AiBlog from "@/assets/images/AiBlog.png";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
@@ -44,6 +45,17 @@ const portfolioProjects = [
     ],
     link: "https://fizzi-demo.vercel.app/",
     image: FizziLandingPage,
+  },
+  {
+    company: "Independent Project",
+    year: "2024",
+    title: "AI Blog Web Design",
+    results: [
+      { title: "Designed a sleek dark-themed AI blog interface for a modern tech audience." },
+      { title: "Created in 3 screen sizes with Autolayout, ensuring flawless visuals across devices." },
+    ],
+    link: "https://www.figma.com/design/qkvxXEt4JpMaEsdvr1VXOi/AI-Blog-Website?node-id=0-1&t=oAYqLQAMwRkOxNTG-1",
+    image: AiBlog,
   },
   {
     company: "Independent Project",
