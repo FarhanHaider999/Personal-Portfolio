@@ -119,12 +119,12 @@ export const HeroSection = () => {
         </div>
       </div>
         <div className='max-w-lg mx-auto'>
-        <h1 className='font-serif font-bold text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-yellow-300 to-amber-600 text-3xl md:text-5xl text-center mt-8 tracking-wide leading-tight md:leading-normal'>
-  Hey I&apos;m Farhan Haider
+        <h1 className='font-lora font-bold text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-yellow-300 to-amber-600 text-3xl md:text-5xl text-center mt-8 tracking-wide leading-tight md:leading-normal'>
+  Farhan Haider
 </h1>
 
-        <p className='mt-4 text-center text-white/60 md:text-lg'>
-        Software Engineer with an Eye for Design.
+        <p className=' font-roboto mt-4 text-center text-white/60 md:text-lg'>
+       Frontend Developer | UI/UX Designer
         </p>
         </div>
         <div className='flex flex-col md:flex-row justify-center items-center mt-8 gap-4'>

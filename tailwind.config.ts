@@ -28,7 +28,9 @@ const config: Config = {
         sans: 'var(--font-sans)',
         serif: 'var(--font-serif)',
         inter: ['Inter', 'sans-serif'],
-        larken: ['72pex Larken', 'serif']
+        larken: ['72pex Larken', 'serif'],
+        lora: ['Lora', 'serif'],
+        roboto: ['Roboto', 'sans-serif']
       },
       animation: {
         'ping-large': "ping-large 1s ease-in-out infinite",

@@ -11,7 +11,9 @@ import mongodbIcon from "@/assets/icons/mongodb.svg";
 import reduxIcon from "@/assets/icons/redux.svg";
 import figmaIcon from "@/assets/icons/figma-svgrepo-com.svg";
 import threeIcon from "@/assets/icons/Three.js.svg";
-import mapImage from "@assets/images/map.png";
+import tailwindIcon from "@/assets/icons/tailwind-css.svg";
+import gsapIcon from "@/assets/icons/gsap.svg";
+import proficepic from "@/assets/images/dp.jpg"
 import { CardHeader } from "@/components/CardHeader";
 import { ToolboxItems } from "@/components/ToolboxItems";
 import {motion} from "framer-motion";
@@ -27,20 +29,12 @@ const toolboxItems = [
     iconType: nextIcon,
   },
   {
-    title: "Node.js",
-    iconType: nodeIcon,
+    title: "Tailwind CSS",
+    iconType: tailwindIcon,
   },
   {
-    title: "Express.js",
-    iconType: expressIcon,
-  },
-  {
-    title: "MongoDB",
-    iconType: mongodbIcon,
-  },
-  {
-    title: "Three.js",
-    iconType: threeIcon,
+    title: "GSAP",
+    iconType: gsapIcon,
   },
   {
     title: "Redux",
@@ -53,93 +47,56 @@ const toolboxItems = [
   
 ];
 
-const hobbies = [
-  {
-    title: 'Behavioral Analysis',
-    emoji: '🎥',
-    left: '10%',
-    top: '10%',
-  },
-  {
-    title: 'Self-improvement',
-    emoji: '🏏',
-    left: '40%',
-    top: '10%',
-  },
-  {
-    title: 'Travel & Adventure',
-    emoji: '✈️',
-    left: '40%',
-    top: '30%',
-  },
-  {
-    title: 'Fitness',
-    emoji: '🏋️‍♂️',
-    left: '15%',
-    top: '40%',
-  },
-  {
-    title: 'Acting & Filmography',
-    emoji: '🌌',
-    left: '35%',
-    top: '45%',
-  },
-  {
-    title: 'Cryptography & Code Breaking',
-    emoji: '🤖',
-    left: '10%',
-    top: '65%',
-  },
-  {
-    title: 'Business & Storytelling',
-    emoji: '📚',
-    left: '30%',
-    top: '80%',
-  },
-]
 
 export const AboutSection = () => {
   const constraintRef = useRef(null);
   return (
-    <div className="py-20 lg:py-28">
+    <div className="py-10 lg:py-20">
       <div className="container" id="About">
-    <SectionHeader 
-    eyebrow="About Me" 
-    title="My Expertise and Interests" 
-    />
-    <div className="mt-20 flex flex-col gap-8">
-      <div className="grid grid-cols-1 md:grid-cols-5 gap-8 md:grid-cols-5 lg:grid-cols-3">
-      <Card className="h-[320px] md:col-span-4 lg:col-span-3">
-      <CardHeader title="Core Technologies" className=""/>
-         <ToolboxItems items={toolboxItems} className="" itemsWrapperClassName="animate-move-left [animation-duration:30s]" />   
-         <ToolboxItems items={toolboxItems} className="mt-6" itemsWrapperClassName="animate-move-right [animation-duration:20s]"  />   
-      </Card>
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-3 gap-8">
-      <Card className="h-[320px] p-0 flex flex-col md:col-span-3 lg:col-span-2">
-      <CardHeader title="Interests Beyond Development" className="px-6 py-6"/>
-          <div className="relative flex-1" ref={constraintRef}>
-            {hobbies.map(hobby => (
-              <motion.div key={hobby.title} className="inline-flex items-center gap-2 px-6 bg-gradient-to-r from-amber-300 to-orange-400 rounded-full py-1.5 absolute" style={{
-                left: hobby.left,
-                top: hobby.top,
-              }}
-              drag
-              dragConstraints={constraintRef}
-              >
-                <span className="font-medium text-gray-950">{hobby.title}</span>
-                
-
-                </motion.div>
-            ))}
+        <SectionHeader eyebrow="About Me" />
+        <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-3 gap-8">
+          <Card className="p-8 md:col-span-5 lg:col-span-3 bg-gradient-to-r from-amber-300 via-orange-300 to-yellow-400 shadow-lg rounded-lg">
+            <div className="flex flex-col lg:flex-row items-center lg:items-center gap-8">
+              <div className="lg:w-1/3 flex justify-center lg:justify-center">
+                <div className="relative">
+                  <Image 
+                    src={proficepic} 
+                    alt={"Your Profile"} 
+                    width={150} 
+                    height={150} 
+                    className="rounded-full shadow-xl object-cover border-4 border-amber-600"
+                  />
+                </div>
+              </div>
+              <div className="lg:w-2/3 text-gray-900 space-y-4 text-center lg:text-left">
+                <h2 className="text-3xl font-bold">Hi, I'm Farhan Haider</h2>
+                <p className="text-lg text-justify tracking-tighter">
+                  I’m a <span className="font-bold text-amber-700">Frontend Developer</span> skilled in creating visually engaging and user-centered experiences, with a strong focus on <span className="font-bold text-amber-700">UI/UX Design</span> that transforms ideas into dynamic and interactive interfaces.
+                </p>
+                <p className="text-justify">
+                  My journey began with a Bachelor's degree in Information Technology, and I've since honed my skills in both design and coding. Whether designing captivating user experiences or implementing dynamic features, I tackle each project with a blend of creativity and meticulousness.
+                </p>
+                <p className="text-justify">
+                  Based in Pakistan, I’m always eager to connect with other design enthusiasts and potential collaborators. If you’re looking for someone who’s as dedicated to frontend development as they are to crafting delightful user experiences, let’s get in touch!
+                </p>
+              </div>
+            </div>
+          </Card>
+        </div>
+        <div className="mt-10 flex flex-col gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-8 md:grid-cols-5 lg:grid-cols-3">
+            <Card className="h-[320px] md:col-span-4 lg:col-span-3">
+              <CardHeader title="Frameworks and Tools I Work With" className="" />
+              <ToolboxItems items={toolboxItems} className="" itemsWrapperClassName="animate-move-left [animation-duration:30s]" />
+              <ToolboxItems items={toolboxItems} className="mt-6" itemsWrapperClassName="animate-move-right [animation-duration:20s]" />
+            </Card>
           </div>
-      </Card>
-      <Card className="h-[320px] p-0 relative md:col-span-2 lg:col-span-1" >
-        <Image src={mapImage} alt="map" className="h-full w-full object-cover transform animate-zoom [animation-duration:2s] "/>
-      </Card>
+          <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-3 gap-8">
+            {/* Additional content can go here */}
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
   );
 };
+
