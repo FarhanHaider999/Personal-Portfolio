@@ -69,15 +69,15 @@ export const AboutSection = () => {
                 </div>
               </div>
               <div className="lg:w-2/3 text-gray-900 space-y-4 text-center lg:text-left">
-                <h2 className="text-3xl font-bold">Hi, I'm Farhan Haider</h2>
+                <h2 className="text-3xl font-bold">Hi, I&apos;m Farhan Haider</h2>
                 <p className="text-lg text-justify tracking-tighter">
-                  I’m a <span className="font-bold text-amber-700">Frontend Developer</span> skilled in creating visually engaging and user-centered experiences, with a strong focus on <span className="font-bold text-amber-700">UI/UX Design</span> that transforms ideas into dynamic and interactive interfaces.
+                  I&apos;m a <span className="font-bold text-amber-700">Frontend Developer</span> skilled in creating visually engaging and user-centered experiences, with a strong focus on <span className="font-bold text-amber-700">UI/UX Design</span> that transforms ideas into dynamic and interactive interfaces.
                 </p>
                 <p className="text-justify">
-                  My journey began with a Bachelor's degree in Information Technology, and I've since honed my skills in both design and coding. Whether designing captivating user experiences or implementing dynamic features, I tackle each project with a blend of creativity and meticulousness.
+                  My journey began with a Bachelor&apos;s degree in Information Technology, and I&apos;ve since honed my skills in both design and coding. Whether designing captivating user experiences or implementing dynamic features, I tackle each project with a blend of creativity and meticulousness.
                 </p>
                 <p className="text-justify">
-                  Based in Pakistan, I’m always eager to connect with other design enthusiasts and potential collaborators. If you’re looking for someone who’s as dedicated to frontend development as they are to crafting delightful user experiences, let’s get in touch!
+                  Based in Pakistan, I&apos;m always eager to connect with other design enthusiasts and potential collaborators. If you&apos;re looking for someone who&apos;s as dedicated to frontend development as they are to crafting delightful user experiences, let&apos;s get in touch!
                 </p>
               </div>
             </div>
