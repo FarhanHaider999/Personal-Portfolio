@@ -1,6 +1,4 @@
 import EcommerceProject from "@/assets/images/ecommerce pic.png";
-import carpic from "@/assets/images/figmaios.png";
-import AiBlog from "@/assets/images/AiBlog.png";
 import projectPic from "@/assets/images/Projectmanagement.png";
 import clientpic from "@/assets/images/clientsite.png";
 import fararpic from "@/assets/images/farar.png";
@@ -9,7 +7,6 @@ import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
-import { DesignCard } from "@/components/DesignCard";
 
 const WebportfolioProjects = [
   {
@@ -63,11 +60,11 @@ const WebportfolioProjects = [
   {
     company: "Startup Project",
     year: "2024",
-    title: "Farerforge – Web Development & Design Startup",
+    title: "Farerforge",
     results: [
       {
         title:
-          "Developed my own company website for a web development and design firm, incorporating smooth animations and motion to create a dynamic, engaging experience.",
+          "Developed my own company website for a web development and design firm, incorporating smooth animations and motion to create a dynamic experience.",
       },
       {
         title:
@@ -79,29 +76,12 @@ const WebportfolioProjects = [
   },
 ];
 
-const designProjects = [
-  {
-    company: "Independent Project",
-    year: "2024",
-    title: "AI Blog Web Design",
-    link: "https://www.behance.net/gallery/209985305/Dark-Theme-AI-Blog-Website/modules/1193203247",
-    image: AiBlog,
-  },
-  {
-    company: "Independent Project",
-    year: "2024",
-    title: "Travel App Design",
-    link: "https://www.behance.net/gallery/209966433/Travel-App-Design/modules/1193096167",
-    image: carpic,
-  },
-];
-
 export const WebProjectsSection = () => {
   return (
     <section className="pb-16 lg:py-24">
       <div className="container" id="projects">
         <SectionHeader
-          title="Development Projects"
+          title="Selected Projects"
           description="Featuring interactive web applications."
         />
         <div className="flex flex-col mt-8 md:mt-12 gap-20">
@@ -153,57 +133,6 @@ export const WebProjectsSection = () => {
                 </div>
               </div>
             </Card>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-};
-
-// DesignProjects
-
-export const DesignProjectsSection = () => {
-  return (
-    <section className="pb-16 lg:py-24">
-      <div className="container" id="projects">
-        <SectionHeader title="Design Projects" />
-        <div className="flex flex-col mt-8 md:mt-12 gap-20">
-          {designProjects.map((project, projectIndex) => (
-            <DesignCard
-              key={project.title}
-              className="px-8 pt-8 pb-0 md:pt-12 md:px-10 lg:pt-16 lg:px-20 sticky"
-              style={{ top: `calc(64px + ${projectIndex * 40}px)` }}
-            >
-              <div className="lg:grid lg:grid-cols-2 lg:gap-16">
-                <div className="lg:pb-16">
-                  <div className="bg-gradient-to-r from-amber-300 to-orange-400 inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text">
-                    <span>{project.company}</span>
-                    <span>&bull;</span>
-                    <span>{project.year}</span>
-                  </div>
-                  <h3 className="font-serif text-2xl mt-2 md:mt-5 md:text-4xl text-slate-800">
-                    {project.title}
-                  </h3>
-                  <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
-
-                  {/* Removed the project results section */}
-
-                  <a href={project.link}>
-                    <button className="bg-white text-yellow-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-6">
-                      <span>View on Behance</span>
-                      <ArrowUpRightIcon className="size-4" />
-                    </button>
-                  </a>
-                </div>
-                <div className="relative">
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none"
-                  />
-                </div>
-              </div>
-            </DesignCard>
           ))}
         </div>
       </div>

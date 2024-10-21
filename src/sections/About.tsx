@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
 import Image from "next/image";
@@ -13,10 +13,10 @@ import figmaIcon from "@/assets/icons/figma-svgrepo-com.svg";
 import threeIcon from "@/assets/icons/Three.js.svg";
 import tailwindIcon from "@/assets/icons/tailwind-css.svg";
 import gsapIcon from "@/assets/icons/gsap.svg";
-import proficepic from "@/assets/images/dp.jpg"
+import proficepic from "@/assets/images/dp.jpg";
 import { CardHeader } from "@/components/CardHeader";
 import { ToolboxItems } from "@/components/ToolboxItems";
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
 import { useRef } from "react";
 
 const toolboxItems = [
@@ -48,9 +48,7 @@ const toolboxItems = [
     title: "Figma",
     iconType: figmaIcon,
   },
-  
 ];
-
 
 export const AboutSection = () => {
   const constraintRef = useRef(null);
@@ -63,25 +61,44 @@ export const AboutSection = () => {
             <div className="flex flex-col lg:flex-row items-center lg:items-center gap-8">
               <div className="lg:w-1/3 flex justify-center lg:justify-center">
                 <div className="relative">
-                  <Image 
-                    src={proficepic} 
-                    alt={"Your Profile"} 
-                    width={150} 
-                    height={150} 
+                  <Image
+                    src={proficepic}
+                    alt={"Your Profile"}
+                    width={150}
+                    height={150}
                     className="rounded-full shadow-xl object-cover border-4 border-amber-600"
                   />
                 </div>
               </div>
               <div className="lg:w-2/3 text-gray-900 space-y-4 text-center lg:text-left">
-                <h2 className="text-3xl font-bold">Hi, I&apos;m Farhan Haider</h2>
+                <h2 className="text-3xl font-bold">
+                  Hi, I&apos;m Farhan Haider
+                </h2>
                 <p className="text-lg text-justify tracking-tighter">
-                  I&apos;m a <span className="font-bold text-amber-700">Web Developer</span> skilled in creating visually engaging and user-centered experiences, with a strong focus on <span className="font-bold text-amber-700">UI/UX Design</span> that transforms ideas into dynamic and interactive interfaces.
+                  I&apos;m a{" "}
+                  <span className="font-bold text-amber-700">
+                    Software Engineer
+                  </span>{" "}
+                  skilled in building efficient, functional web applications,
+                  with a strong focus on{" "}
+                  <span className="font-bold text-amber-700">
+                    frontend development
+                  </span>{" "}
+                  and seamless user interaction.
                 </p>
                 <p className="text-justify">
-                  My journey began with a Bachelor&apos;s degree in Information Technology, and I&apos;ve since honed my skills in both design and coding. Whether designing captivating user experiences or implementing dynamic features, I tackle each project with a blend of creativity and meticulousness.
+                  My journey began with a Bachelor&apos;s degree in Information
+                  Technology, and I&apos;ve since honed my skills in coding and
+                  modern web development. Whether creating intuitive interfaces
+                  or implementing complex features, I tackle each project with
+                  technical precision and attention to detail.
                 </p>
                 <p className="text-justify">
-                  Based in Pakistan, I&apos;m always eager to connect with potential collaborators. If you&apos;re looking for someone who&apos;s as dedicated to web development as they are to crafting delightful user experiences, let&apos;s get in touch!
+                  Based in Pakistan, I&apos;m always eager to connect with
+                  potential collaborators. If you&apos;re looking for someone
+                  who&apos;s as passionate about web development as they are
+                  about crafting efficient and robust applications, let&apos;s
+                  get in touch!
                 </p>
               </div>
             </div>
@@ -90,9 +107,20 @@ export const AboutSection = () => {
         <div className="mt-10 flex flex-col gap-8">
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8 md:grid-cols-5 lg:grid-cols-3">
             <Card className="h-[320px] md:col-span-4 lg:col-span-3">
-              <CardHeader title="Frameworks and Tools I Work With" className="" />
-              <ToolboxItems items={toolboxItems} className="" itemsWrapperClassName="animate-move-left [animation-duration:30s]" />
-              <ToolboxItems items={toolboxItems} className="mt-6" itemsWrapperClassName="animate-move-right [animation-duration:20s]" />
+              <CardHeader
+                title="Frameworks and Tools I Work With"
+                className=""
+              />
+              <ToolboxItems
+                items={toolboxItems}
+                className=""
+                itemsWrapperClassName="animate-move-left [animation-duration:30s]"
+              />
+              <ToolboxItems
+                items={toolboxItems}
+                className="mt-6"
+                itemsWrapperClassName="animate-move-right [animation-duration:20s]"
+              />
             </Card>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-3 gap-8">
@@ -103,4 +131,3 @@ export const AboutSection = () => {
     </div>
   );
 };
-
