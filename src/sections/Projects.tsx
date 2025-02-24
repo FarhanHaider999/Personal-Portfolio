@@ -41,23 +41,6 @@ const WebportfolioProjects = [
     image: projectPic,
   },
   {
-    company: "Client Project",
-    year: "2024",
-    title: "Client Portfolio Website",
-    results: [
-      {
-        title:
-          "Built a modern portfolio using Next.js and Acternity UI, showcasing the client's projects effectively.",
-      },
-      {
-        title:
-          "Ensured a seamless experience across devices with a fully responsive design and easy navigation.",
-      },
-    ],
-    link: "https://maryam-hassan.vercel.app/",
-    image: clientpic,
-  },
-  {
     company: "Startup Project",
     year: "2024",
     title: "Farerforge",
